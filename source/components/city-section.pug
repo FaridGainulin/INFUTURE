@@ -1,0 +1,25 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      h2.city-section__title.font-w-regular.font-s-54.text-up
+        | Откройте 
+        span.font-w-medium.color-violet свой магазин 
+        br.no-br
+        | техники Apple
+      .city-section__sub-title.font-w-regular.font-s-26
+        | и зарабатывайте 
+        span.color-violet
+          | от 7,8 млн чистой 
+          br
+          | прибыли в год
+      .city-section__text.font-s-22
+        | Проверьте, свободен ли ваш город для работы по франшизе 
+        span.font-w-medium  «INFUTURE»
+      form.city-section__form(data-feedback-form)
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="city" autocomplete="off" placeholder="Ваш город")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn(type="submit") Проверить
+      .city-section__agree-wrapper
+        include ../components/agree.pug
+      img.city-section__img(src="images/city-section-img.png" loading="lazy" width="826" height="700" alt="image")

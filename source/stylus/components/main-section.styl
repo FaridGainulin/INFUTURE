@@ -1,0 +1,89 @@
+.main-section
+
+  &__container
+    background-image: url('../images/main-section-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position center
+    background-color #1F1F1F
+    position relative
+    z-index 1
+    padding 20px 0
+    text-align: center
+    border-radius: 20px
+    +above($breakpoints.sm)
+      text-align: start
+      padding 30px 5px 30px 30px
+      border-radius: 25px
+    +above($breakpoints.md)
+      padding 50px 10px 50px 55px
+      border-radius: 35px
+    +above($breakpoints.xxl)
+      padding 74px 10px 74px 80px
+      border-radius: 40px
+
+  &__sub-title
+    display: flex
+    justify-content center
+    align-items: center
+    background-color $color-grey
+    border-radius: 40px
+    width 230px
+    height: 42px
+    margin 15px auto 181px
+    +above($breakpoints.sm)
+      width 370px
+      height: 30px
+      margin 6px 0 150px
+    +above($breakpoints.md)
+      width 510px
+      height: 35px
+      margin 8px 0 200px
+    +above($breakpoints.xxl)
+      width 593px
+      height: 40px
+      margin 8px 0 239px
+
+  &__bottom
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    +above($breakpoints.sm)
+      align-items: flex-start
+      gap: 15px
+    +above($breakpoints.md)
+      gap: 20px
+    +above($breakpoints.xxl)
+      gap: 22px
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 7px
+    +above($breakpoints.sm)
+      flex-direction: row
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 12px
+    +above($breakpoints.xxl)
+      gap: 14px
+    & > *
+      width 280px !important
+      +above($breakpoints.sm)
+        width 220px !important
+      +above($breakpoints.md)
+        width 270px !important
+      +above($breakpoints.xxl)
+        width 329px !important
+
+  &__agree-wrapper
+    width 100%
+    padding 10px 0 0
+    +above($breakpoints.sm)
+      padding: 14px 40px 0 460px;
+    +above($breakpoints.md)
+      padding: 16px 140px 0 565px;
+    +above($breakpoints.xxl)
+      padding 18px 150px 0 686px

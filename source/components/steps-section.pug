@@ -1,0 +1,96 @@
+section.steps-section
+  .wrapper
+    .steps-section__container
+      img.steps-section__img-1(src="images/steps-section-img-1.png" loading="lazy" width="847" height="847" alt="image")
+      img.steps-section__img-2(src="images/steps-section-img-2.png" loading="lazy" width="479" height="401" alt="image")
+      .steps-section__part.part поддержка
+      h2.steps-section__title.font-s-46.text-up
+        | Меры поддержки 
+        span.font-w-medium.color-violet партнёров сети
+      .steps-section__sub-title.font-w-regular.font-s-22-a Как мы поможем вам на старте
+      .swiper-bullet
+        .steps-section__cards.swiper-wrapper
+          .steps-section__card.swiper-slide
+            span.font-s-18 (01)
+            span.font-s-20
+              | Дадим рекомендации 
+              br.no-br
+              | по формированию сильной команды
+          .steps-section__card.swiper-slide
+            span.font-s-18 (02)
+            span.font-s-20
+              | Проведем для вас и вашей команды 
+              br.no-br
+              | подробное обучение
+          .steps-section__card.swiper-slide
+            span.font-s-18 (03)
+            span.font-s-20
+              | Передадим перечень ассортимента 
+              br.no-br
+              | товаров сети
+          .steps-section__card.swiper-slide
+            span.font-s-18 (04)
+            span.font-s-20
+              | Организуем поставки товаров 
+              br.no-br
+              | из Головной компании
+          .steps-section__card.swiper-slide
+            span.font-s-18 (05)
+            span.font-s-20
+              | Предоставим списки проверенных 
+              br.no-br
+              | поставщиков товаров
+          .steps-section__card.swiper-slide
+            span.font-s-18 (06)
+            span.font-s-20
+              | Передадим фирменные стандарты 
+              br.no-br
+              | оказания услуг сети
+          .steps-section__card.swiper-slide.steps-section__card-7
+            span.font-s-18 (07)
+            span.font-s-20
+              | Дадим рекомендации по выбору 
+              br.no-br
+              | локации и помещения
+          .steps-section__card.swiper-slide.steps-section__card-position
+            span.font-s-18 (08)
+            span.font-s-20
+              | Поможем правильно оборудовать 
+              br.no-br
+              | и оформить точку
+          .steps-section__card.swiper-slide.steps-section__card-position
+            span.font-s-18 (09)
+            span.font-s-20
+              | Предоставим руководство 
+              br.no-br
+              | по использованию фирменного стиля
+          .steps-section__card.swiper-slide.steps-section__card-position
+            span.font-s-18 (10)
+            span.font-s-20
+              | Поделимся рабочими 
+              br.no-br
+              | маркетинговыми инструментами
+          .steps-section__card.swiper-slide.steps-section__card-position
+            span.font-s-18 (11)
+            span.font-s-20
+              | Дадим рекомендации по оформлению 
+              br.no-br
+              | и ведению соц. сетей
+          .steps-section__card.swiper-slide.steps-section__card-position
+            span.font-s-18 (12)
+            span.font-s-20
+              | Добавим в закрытое сообщество 
+              br.no-br
+              | партнёров сети
+        .bullet-pagination
+      .steps-section__bottom
+        .font-w-regular.font-s-28
+          | Получите подробный план запуска бизнеса 
+          span.color-violet в 1 клик
+        form.steps-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn.btn(type="submit") Получить
+        .steps-section__agree-wrapper
+          include ../components/agree.pug

@@ -1,0 +1,19 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      h1.main-section__title.font-s-54.text-up
+        | Зарабатывайте 
+        br.no-br
+        span.font-w-medium.color-violet от 652 000 рублей 
+        | ежемесячно
+      .main-section__sub-title
+        .font-w-regular.font-s-26 на продаже техники и аксессуаров Apple
+      .main-section__bottom
+        .font-w-regular.font-s-22 Узнайте, как стать партнёром франшизы «INFUTURE»
+        form.main-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn.btn--main(type="submit") Получите образец <br> партнёрского договора
+      .main-section__agree-wrapper
+        include ../components/agree.pug

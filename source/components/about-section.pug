@@ -1,0 +1,55 @@
+section.about-section
+  .wrapper
+    .about-section__container
+      .about-section__box
+        img.about-section__img(src="images/about-section-img.png" loading="lazy" width="467" height="511" alt="image")
+        .about-section__box-text
+          .about-section__part.part о нас
+          h2.about-section__title.font-s-46.text-up
+            | Наша компания ведёт 
+            br.no-br
+            | успешный бизнес 
+            br.no-br
+            span.font-w-medium.color-violet уже с 2020 года
+          .about-section__text
+            span.font-w-regular.font-s-18
+              | За это время мы не только получили богатый опыт ведения 
+              br.no-br
+              | бизнеса в этой нише, но и заработали большую клиентскую 
+              br.no-br
+              | базу, которая насчитывает уже 
+              span.font-w-medium более 5 000 человек.
+            span.font-w-regular.font-s-18
+              | Мы стремимся быть надежным партнёром для наших клиентов 
+              br.no-br
+              | и предоставляем не только высококачественную технику 
+              br.no-br
+              | Apple, но и искренний, индивидуальный подход.
+            span.font-w-medium.font-s-18.color-violet
+              | Наша цель — создать атмосферу, где каждый клиент 
+              br.no-br
+              | чувствует себя ценным.
+      .about-section__block
+        img.about-section__block-img(src="images/about-section-block-img.png" loading="lazy" width="228" height="128" alt="image")
+        .font-w-medium.font-s-22-a
+          | Сегодня мы готовы к развитию и новым масштабам, поэтому ищем 
+          br.no-br
+          | партнеров, разделяющих нашу философию и ценности и готовых 
+          br.no-br
+          | к по-настоящему качественному партнёрству и развитию бизнеса.
+      form.about-section__form(data-feedback-form)
+        .about-section__bottom-block
+          img.about-section__bottom-img(src="images/about-section-bottom-img.png" loading="lazy" width="133" height="133" alt="image")
+          .font-w-regular.font-s-28
+            | Будем рады ответить 
+            br.no-br
+            span.color-violet на любой вопрос 
+            br.no-br
+            | о работе франшизы
+        textarea.input.input--textarea(type="text" name="answer" autocomplete="off" placeholder="Текст вопроса")
+        input(type="text" name="honeyfield" class="honeypot" style="display:none")
+        input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+        input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+        button.btn(type="submit") Задать вопрос
+      .about-section__agree-wrapper
+        include ../components/agree.pug

@@ -1,0 +1,47 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      img.finances-section__img-bg(src="images/finances-section-img-bg.svg" loading="lazy" width="1180" height="125" alt="image")
+      img.finances-section__img(src="images/finances-section-img.png" loading="lazy" width="398" height="529" alt="image")
+      .finances-section__part.part цифры
+      h2.finances-section__title.font-s-46.text-up
+        | Ключевые показатели 
+        span.font-w-medium.color-violet франшизы,
+      .finances-section__sub-title.font-w-regular.font-s-22-a
+        | на которые вы можете рассчитывать, открыв 
+        br.no-br
+        | бизнес по франшизе 
+        span.color-violet «INFUTURE»
+      .swiper-bullet
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            .font-w-regular.font-s-36 6 506 000 руб.
+            .font-s-22-a ежемесячная <br> выручка
+          .finances-section__card.swiper-slide
+            .font-w-regular.font-s-36 с 1-го месяца
+            .font-s-22-a вы начнете <br> зарабатывать
+          .finances-section__card.swiper-slide
+            .font-w-regular.font-s-36 652 000 руб.
+            .font-s-22-a ежемесячная <br> чистая прибыль
+          .finances-section__card.swiper-slide
+            .font-w-regular.font-s-36 2 месяца
+            .font-s-22-a для запуска <br> бизнеса
+          .finances-section__card.swiper-slide
+            .font-w-regular.font-s-36 13 месяцев
+            .font-s-22-a срок окупаемости <br> магазина
+          .finances-section__card.swiper-slide
+            .font-w-regular.font-s-36 10%
+            .font-s-22-a рентабельность <br> по чистой прибыли
+        .bullet-pagination
+      .finances-section__bottom
+        .font-w-regular.font-s-28
+          | Узнайте, какими будут ваши 
+          span.color-violet стартовые инвестиции
+        .finances-section__bottom-text.font-s-22-a Скачайте финансовую модель франшизы
+        form.finances-section__form(data-feedback-form)
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") Скачать
+        .finances-section__agree-wrapper
+          include ../components/agree.pug
