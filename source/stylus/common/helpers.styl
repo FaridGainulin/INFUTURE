@@ -18,6 +18,15 @@
 .color-violet
   color: $color-violet
 
+.b-radius-20
+  border-radius: 8px
+  +above($breakpoints.sm)
+    border-radius: 12px
+  +above($breakpoints.md)
+    border-radius: 16px
+  +above($breakpoints.xxl)
+    border-radius: 20px
+
 .part
   font-family: 'GothamPro-Regular'
   font-weight: 400
@@ -199,6 +208,16 @@
   line-height: 120%
   +above($breakpoints.sm)
     font-size: 14px
+  +above($breakpoints.md)
+    font-size: 18px
+  +above($breakpoints.xxl)
+    font-size: 22px
+    line-height 26px
+.font-s-22-c
+  font-size: 13px
+  line-height: 120%
+  +above($breakpoints.sm)
+    font-size: 12px
   +above($breakpoints.md)
     font-size: 18px
   +above($breakpoints.xxl)
@@ -401,7 +420,7 @@
 //   +above($breakpoints.xxl)
 //     font-size: 45px
 .font-s-46
-  font-size: 16px
+  font-size: 15px
   line-height: 110%
   +above($breakpoints.sm)
     font-size: 28px
@@ -447,7 +466,7 @@
 //   +above($breakpoints.xxl)
 //     font-size: 53px
 .font-s-54
-  font-size: 17px
+  font-size: 16px
   line-height: 110%
   +above($breakpoints.sm)
     font-size: 34px

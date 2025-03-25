@@ -1,48 +1,29 @@
 .main-section
 
   &__container
-    background-image: url('../images/main-section-bg.jpg')
+    background-image: url('../images/main-section-bg.png')
     background-repeat: no-repeat
     background-size: cover
     background-position center
     background-color #1F1F1F
     position relative
     z-index 1
-    padding 20px 0
-    text-align: center
-    border-radius: 20px
+    padding 20px
     +above($breakpoints.sm)
-      text-align: start
       padding 30px 5px 30px 30px
-      border-radius: 25px
     +above($breakpoints.md)
       padding 50px 10px 50px 55px
-      border-radius: 35px
     +above($breakpoints.xxl)
       padding 74px 10px 74px 80px
-      border-radius: 40px
 
   &__sub-title
-    display: flex
-    justify-content center
-    align-items: center
-    background-color $color-grey
-    border-radius: 40px
-    width 230px
-    height: 42px
-    margin 15px auto 181px
+    padding 10px 0 240px
     +above($breakpoints.sm)
-      width 370px
-      height: 30px
-      margin 6px 0 150px
+      padding 4px 0 100px
     +above($breakpoints.md)
-      width 510px
-      height: 35px
-      margin 8px 0 200px
+      padding 4px 0 180px
     +above($breakpoints.xxl)
-      width 593px
-      height: 40px
-      margin 8px 0 239px
+      padding 4px 0 255px
 
   &__bottom
     display: flex
@@ -70,7 +51,7 @@
     +above($breakpoints.xxl)
       gap: 14px
     & > *
-      width 280px !important
+      width 230px !important
       +above($breakpoints.sm)
         width 220px !important
       +above($breakpoints.md)

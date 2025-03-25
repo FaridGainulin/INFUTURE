@@ -3,7 +3,7 @@
   &__container
     position relative
     z-index 1
-    padding-bottom 5px
+    padding-bottom 35px
     +above($breakpoints.sm)
       padding-bottom 50px
     +above($breakpoints.md)
@@ -14,7 +14,7 @@
   &__img-bg
     position: absolute
     width: 100%
-    height: 33px
+    height: 38px
     top: 58px
     left: 0
     +above($breakpoints.sm)
@@ -36,14 +36,8 @@
     +above($breakpoints.xxl)
       width 176px
 
-  &__title,
-  &__sub-title
-    text-align: center
-    +above($breakpoints.sm)
-      text-align: start
-
   &__title
-    padding-top 15px
+    padding-top 20px
     +above($breakpoints.sm)
       padding-top 20px
     +above($breakpoints.md)
@@ -52,9 +46,9 @@
       padding-top 28px
 
   &__sub-title
-    padding-bottom 15px
+    padding-bottom 20px
+    text-align: end
     +above($breakpoints.sm)
-      text-align: end
       padding-bottom 30px
     +above($breakpoints.md)
       padding-bottom 50px
@@ -166,7 +160,7 @@
       padding 146px 0 20px
 
   &__btn
-    width 240px !important
+    width 200px !important
     +above($breakpoints.sm)
       width 200px !important
     +above($breakpoints.md)

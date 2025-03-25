@@ -10,9 +10,9 @@
   color: #fff
   border-radius: 30px
   background: #A369D0
-  font-family: 'GothamPro-Medium'
-  font-weight: 500
-  font-size: 14px
+  font-family: 'GothamPro-Regular'
+  font-weight: 400
+  font-size: 12px
   line-height: 120%
   transition transform 0.5s, top 0.8s
   +above($breakpoints.sm)
@@ -30,24 +30,6 @@
 
   &:active
     top: 3px
-
-  &::before
-    content: ""
-    position: absolute
-    top: 0;
-    height: 100%;
-    width: 36px;
-    transform: skewX(-45deg)
-    left: -150%
-    pointer-events: none
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
-    animation: flareAnimation 4s infinite ease-in;
-    vendord = official
-    @keyframes flareAnimation
-      0%
-          left: -150%
-      100% 
-          left: 250%
 
   &--call-me
     color: #F1F1F1

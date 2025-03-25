@@ -4,7 +4,7 @@
     overflow hidden
     position relative
     z-index 1
-    padding-bottom 170px
+    padding-bottom 215px
     +above($breakpoints.sm)
       padding-bottom 50px
     +above($breakpoints.md)
@@ -15,9 +15,9 @@
   &__img-1
     position: absolute
     z-index -1
-    width: 210px;
+    width: 232px;
     height: auto;
-    bottom: -20px;
+    bottom: 10px;
     right: -25px;
     +above($breakpoints.sm)
       bottom: unset
@@ -36,9 +36,9 @@
   &__img-2
     position: absolute
     z-index -1
-    width: 149px;
+    width: 176px;
     height: auto;
-    bottom: 20px;
+    bottom: 50px;
     left: 0;
     +above($breakpoints.sm)
       width: 316px;
@@ -60,15 +60,8 @@
     +above($breakpoints.xxl)
       width 201px
 
-  &__title,
-  &__sub-title,
-  &__bottom
-    text-align: center
-    +above($breakpoints.sm)
-      text-align: start
-
   &__title
-    padding 15px 0 5px
+    padding 20px 0 5px
     +above($breakpoints.sm)
       padding 20px 0 10px
     +above($breakpoints.md)
@@ -77,9 +70,9 @@
       padding 28px 0 14px
 
   &__sub-title
-    padding-bottom 15px
+    padding-bottom 20px
+    text-align: end
     +above($breakpoints.sm)
-      text-align: end
       padding-bottom 30px
     +above($breakpoints.md)
       padding-bottom 50px
@@ -128,9 +121,8 @@
   &__bottom
     display: flex
     flex-direction: column
-    align-items: center
+    margin-top 35px
     +above($breakpoints.sm)
-      align-items: flex-start
       margin-top 30px
     +above($breakpoints.md)
       margin-top 45px
@@ -154,7 +146,7 @@
       gap: 14px
       margin-top 30px
     & > *
-      width 280px !important
+      width 230px !important
       +above($breakpoints.sm)
         width 233px !important
       +above($breakpoints.md)
